@@ -1,0 +1,434 @@
+﻿/* тело сайта ---------------------------------------- */
+html, body {
+	height: 100%;
+} 
+
+ul, p, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	background: linear-gradient(to bottom, #c0ecaf, #d8eaae, #628082);
+	position: relative;
+	min-height: 100%;
+	min-width: 1200px;
+}
+
+.clearfix:before,
+.clearfix:after {
+ content: " ";
+ display: table;
+}
+.clearfix:after {
+ clear: both;
+}
+
+/* header ---------------------------------------------- */
+.header-container {
+	height: 100px;
+	background: url(../img/header-bg.png);
+	position: relative;
+}
+
+.header-container:after {
+	content: " ";
+	width: 100%;
+	height: 7px;
+	background: #eee;
+	position: absolute;
+	bottom: 0px;
+	box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+.header-content {
+	max-width: 1200px;
+	height: 95px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 197px;
+	height: 51px;
+	padding-top: 25px;
+	float: left;
+}
+
+.social-links {
+	float: right;
+	margin-top: 20px;
+}
+
+.social-item {
+	display: inline-block;
+	list-style: none;
+	margin-left: 10px;
+}
+.social-item:first-child {
+	margin-left: 0;
+}
+
+.social-icons {
+	background: url(../img/social-icons.png);
+	display: block;
+	width: 42px;
+	height: 44px;
+	text-indent: -9999px;
+}
+
+.fb-icon {
+	background-position: -1px -1px;
+}
+
+.fb-icon:hover {
+	background-position: -45px -1px;
+}
+
+.vk-icon {
+	background-position: -1px -93px;
+}
+
+.vk-icon:hover {
+	background-position: -45px -93px;
+}
+
+.tw-icon {
+	background-position: -89px -1px;
+}
+
+.tw-icon:hover {
+	background-position: -89px -47px;
+}
+
+.gh-icon {
+	background-position: -1px -47px;
+}
+
+.gh-icon:hover {
+	background-position: -45px -47px;
+}
+
+/* основной контент ------------------------------------ */
+.main-container {
+	width: 960px;
+	padding: 40px 0 0 0;
+	margin: 0 auto;
+}
+
+.side-bar {
+	width: 250px;
+	min-height: 300px;
+	float: left;
+}
+
+.main-content {
+	width: 650px;
+	float: right;
+}
+
+/* главное меню ------------------------------------------- */
+.main-menu {
+	margin-bottom: 40px;
+}
+
+.main-menu-list {
+	font-family: "OpenSansSemiBold";
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+	display: block;
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid #c2c2c2;
+
+}
+
+.main-menu-item {
+	list-style: none;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.main-menu-item:last-child {
+	border-bottom: none;
+}
+
+.main-menu-link {
+	text-decoration: none;
+	color: #727272;
+	display: block;
+	padding: 15px 30px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,1);
+	background: linear-gradient(to bottom, #fdfdfd, #eee);
+}
+
+.main-menu-link:hover {
+	background: linear-gradient(to bottom, #eee, #e4e4e4);
+	color: #727272;
+}
+
+.active {
+	color: #1e7465;
+	padding: 15px 30px;
+	background: linear-gradient(to bottom, #a5efdd 3%, #7de8cd 5%, #40b99b);
+}
+
+.active:hover {
+	color: #1e7465;
+	padding: 15px 30px;
+	background: linear-gradient(to bottom, #a5efdd 3%, #7de8cd 5%, #40b99b);
+}
+
+/* контакты ---------------------------------- */
+.contacts {
+}
+
+.contacts-list {
+	list-style: none;
+	font-style: normal;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+	border: 1px solid #c2c2c2;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+.contacts-item:first-child {
+	color: #b2781d;
+	padding: 15px 30px;
+	background: linear-gradient(to bottom,#f8dda7 3%, #f4ce82 5%, #ddb25f);
+	font-family: "OpenSansSemiBold";
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+}
+
+.contacts-item {
+	border-bottom: 1px solid #ccc;
+}
+.contacts-item:last-child {
+	border: none;
+}
+
+.contacts-link {
+	text-decoration: none;
+	font-family: "OpenSansRegular";
+	font-size: 14px;
+	height: 27px;
+	color: #727272;
+	display: block;
+	padding: 9px 30px 0 0;
+	text-shadow: 1px 1px 1px rgba(255,255,255,1);
+	background: linear-gradient(to bottom, #fff, #f4f4f4);
+}
+
+.contacts-link:hover {
+	background: linear-gradient(to bottom, #fdfdfd, #f3e8d4);
+}
+
+.contacts-link span {
+	background: url(../img/contacts-icons.png) no-repeat;
+	display: inline-block;
+	width: 59px;
+	height: 37px;
+	margin-right: 30px;
+	float: left;
+	margin-top: -10px;
+}
+
+span.phone {
+	background-position: 0 -38px;
+}
+
+span.skype {
+	background-position: 0 -75px;
+}
+
+/* содержание -------------------------------- */
+.content-container {
+	background: linear-gradient(to bottom, #f7f7f7, #f0f0f0);
+	border-radius: 5px;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.content-title {
+	font-family: "OpenSansSemiBold";
+	font-size: 24px;
+	color: #eee;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	background: linear-gradient(to bottom, #c4c4c4 2%, #a9a9a9 4%, #7c7c7c);
+	border-radius: 5px 5px 0 0;
+	padding: 11px 40px 14px;
+	margin: 0;
+	border: 1px solid #777;
+	border-top: 1px solid #9c9c9c;
+}
+
+/* главная страница ------------------------- */
+.about-content {
+	border: 1px solid #c2c2c2;
+	border-radius: 0 0 5px 5px;
+}
+
+.foto-container {
+	margin: 40px 0 0 40px;
+	float: left;
+}
+
+.foto {
+	width: 143px;
+	height: 143px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 8px solid #f4f4f4;
+	box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+.info-list {
+	list-style: none;
+	width: 365px;
+	margin: 40px 40px 20px;
+	float: right;
+}
+
+.info-item {
+	font-size: 14px;
+	color: #727272;
+	padding-bottom: 10px;
+}
+
+.info-name {
+	font-family: "OpenSansSemiBold";
+	padding-right: 10px;
+	float: left;
+}
+
+.info-text {
+	font-family: "OpenSansRegular";
+	max-width: 220px;
+	margin-right: 20px;
+	float: left;
+}
+
+.info-item:last-child {
+	padding-top: 20px;
+}
+
+.skill-list {
+	max-width: 200px;
+    overflow: hidden;
+	display: block;
+	float: left;
+}
+
+.skill-item {
+	list-style: none;
+	display: inline-block;
+	font-family: "OpenSansSamiBold";
+	font-size: 13px;
+	height: 18px;
+	color: #1e7465;
+	background: url(../img/skill-bg.png) no-repeat;
+	padding: 2px 5px 0 15px;
+	border-right: 1px solid #d5d5d5;
+	border-radius: 0 5px 5px 0;
+	margin:0 7px 7px 0;
+}
+
+.item-title {
+	font-family: "OpenSansSemiBold";
+	color: #727272;
+	font-size: 14px;
+}
+
+.item-text {
+	font-family: "OpenSansRegular";
+	font-size: 14px;
+	color: #727272;
+}
+
+.content-row {
+	border: 1px solid #c2c2c2;
+	border-radius: 0 0 5px 5px;
+	padding: 20px 40px 10px 40px;
+}
+
+.content-item {
+	list-style: none;
+	display: list-item;
+	padding: 20px 0;
+	background: url(../img/underline.png) repeat-x bottom;
+}
+
+.content-text {
+	min-height: 55px;
+	padding-left:90px;
+}
+
+.work-icon {
+	background: url(../img/case.png) left center no-repeat;
+}
+
+.school-icon {
+	background: url(../img/school.png) left center no-repeat;
+}
+
+.universaty-icon {
+	background: url(../img/Graguete.png) left center no-repeat;
+}
+
+.diplom-icon {
+	background: url(../img/diploma.png) left center no-repeat;
+}
+
+.content-item:last-child {
+	background: none;
+}
+
+/* footer -------------------------------------- */
+.footer-container {
+	min-width: 1200px;
+	height: 60px;
+	background: linear-gradient(to bottom, #fff, #eee);
+	box-shadow: 0 -1px 10px rgba(0,0,0,0.2);
+	clear: both;
+	margin-top: -60px;
+	position: relative;
+	z-index: 999;
+}
+
+.footer-content {
+	width: 720px;
+	margin: 0 auto;
+}
+
+.sing-up {
+	padding-top: 20px;
+	float: left;
+}
+
+.sing-up-link {
+	display: block;
+	width: 40px;
+	height: 22px;
+	font-family: "OpenSansSemiBold";
+	font-size: 14px;
+	color: #9c9c9c;
+	text-decoration: none;
+	background: url(../img/locked.png) no-repeat;
+	padding-left: 30px;
+}
+
+.sing-up-link:hover {
+	background: url(../img/unlocked.png) no-repeat;
+	color: #777;
+}
+
+.copyright {
+	font-family: "OpenSansLight";
+	font-size: 12px;
+	color: #727272;
+	padding: 20px 40px 0 40px;
+	margin-left: 70px;
+	text-align: center;
+}
