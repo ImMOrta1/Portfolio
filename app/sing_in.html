@@ -41,14 +41,19 @@
 		<div class="sing-in">
 			<p class="sing-in-title">Авторизируйтесь</p>
 			<form class="sing-in-form">
-				<fieldset class="form-fields">
+				<div class="sing-in-username">
 					<input class="username" type="text" placeholder="Введите Email">
+					<div class="mail-icon"></div>
+				</div>
+				<div class="sing-in-password">
 					<input class="password" type="password" placeholder="Введите пароль">
-				</fieldset>
-				<fieldset class="form-fields">
-					<input class="" type="checkbox" placeholder="Запомнить меня?">
-					<input class="" type="submit" placeholder="Войти">
-				</fieldset>
+					<div class="pass-icon"></div>
+				</div>
+				<div class="sing-in-checkbox">
+					<input class="checkbox" id="check" type="checkbox">
+					<label class="checkbox-text" id="check">Запомнить меня?</label>
+				</div>
+				<button class="login-button" type="submit">Войти</button>
 			</form>
 		</div>
 	</div>
