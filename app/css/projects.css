@@ -111,7 +111,6 @@
 }
 
 /* pop-up */
-
 .popup {
 	display: none;
 	top: 50%;
@@ -176,7 +175,6 @@
 
 .popup-input-file {
 	position: relative;
-
 }
 
 .popup-input-file-upload {
@@ -213,6 +211,7 @@
 	background: url(../img/cloud.png) center center no-repeat;
 	border-left: 1px solid #d6d6d6;
 	z-index: 9;
+	cursor: pointer;
 }
 
 .popup-textarea {

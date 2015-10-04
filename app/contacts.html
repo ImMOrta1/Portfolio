@@ -72,88 +72,34 @@
 			<div class="main-content">
 				<section class="content-container">
 					<h2 class="content-title">Основная информация</h2>
-					<div class="about-content clearfix">
-						<div class="foto-container">
-							<img src="img/foto.jpg" alt="Фото Дмитрия Межуева" class="foto">
+					<div class="contacts-form-container">
+						<div class="contacts-form-row clearfix">
+						<form action="" method="post" class="contacts-form">
+							<label class="contacts-form-label left">
+								<div class="contacts-form-title">Имя</div>
+								<input type="text" class="contacts-form-name" placeholder="Как к вам обращаться"></input>
+							</label>
+							<label class="contacts-form-label right">
+								<div class="contacts-form-title">Email</div>
+								<input type="text" class="contacts-form-email" placeholder="Куда мне писать"></input>
+							</label>
 						</div>
-						<ul class="info-list">
-							<li class="info-item clearfix">
-								<div class="info-name">Меня зовут:</div>
-								<div class="info-text">Межуев Дмитрий</div>
-							</li>
-							<li class="info-item clearfix">
-								<div class="info-name">Мой возраст:</div>
-								<div class="info-text">33 года</div>
-							</li>
-							<li class="info-item clearfix">
-								<div class="info-name">Мой город:</div>
-								<div class="info-text">Москва, Россия</div>
-							</li>
-							<li class="info-item clearfix">
-								<div class="info-name">Моя специализация:</div>
-								<div class="info-text">FRONTEND разработчик</div>
-							</li>
-							<li class="info-item clearfix">
-								<div class="info-name">Ключевые навыки:</div>
-								<ul class="skill-list">
-									<li class="skill-item">photoshop</li>
-									<li class="skill-item">html5</li>
-									<li class="skill-item">css</li>
-									<li class="skill-item">javascript</li>
-									<li class="skill-item">git</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="content-container clearfix">
-					<h1 class="content-title">Опыт работы</h1>
-					<div class="content-row">
-						<ul class="content-list">
-							<li class="content-item">
-								<div class="content-text work-icon">
-									<h3 class="item-title">S8-Group (строительная компания)</h3>
-									<p class="item-text">май 2013 - декабрь 2014</p>
-								</div>
-							</li>
-							<li class="content-item">
-								<div class="content-text work-icon">
-									<h3 class="item-title">ООО "ЗападЭнергоСетьСтрой"</h3>
-									<p class="item-text">2009 - настоящее время</p>
-								</div>
-							</li>
-							<li class="content-item">
-								<div class="content-text work-icon">
-									<h3 class="item-title">Работа фрилансером</h3>
-									<p class="item-text">2007 - настоящее время</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="content-container clearfix">
-					<h1 class="content-title">Образование</h1>
-					<div class="content-row">
-						<ul class="content-list">
-							<li class="content-item">
-								<div class="content-text diplom-icon">
-									<h3 class="item-title">Обучение в Loftschool</h3>
-									<p class="item-text">Сентябрь 2015 - настоящее время</p>
-								</div>
-							</li>
-							<li class="content-item">
-								<div class="content-text universaty-icon">
-									<h3 class="item-title">Высшее образование - ИБПМ</h3>
-									<p class="item-text">2004 - 2009</p>
-								</div>
-							</li>
-							<li class="content-item">
-								<div class="content-text school-icon">
-									<h3 class="item-title">Полное среднее образование (школа 696 г.Москвы)</h3>
-									<p class="item-text">1989 - 1999</p>
-								</div>
-							</li>
-						</ul>
+						<label class="contacts-form-label">
+							<div class="contacts-form-title">Сообщение</div>
+							<textarea class="contacts-form-textarea" placeholder="Кратко в чем суть"></textarea>
+						</label>
+						<div class="contacts-form-title">Введите код указанный на картинке</div>
+						<div class="contacts-form-row clearfix">
+							<img src="img/capcha.png" height="79" width="191">
+							<label class="contacts-form-label right">
+								<input type="text" class="contacts-form-capcha" placeholder="Введите код"></input>
+							</label>
+						</div>
+						<div class="contacts-form-row clearfix">
+							<button class="contacts-form-send" type="submit">Отправить</button>
+							<button class="contacts-form-reset" type="reset">Очистить</button>
+						</div>
+						</form>
 					</div>
 				</section>
 			</div>
@@ -169,7 +115,7 @@
 	</footer>
 	<!-- scripts -->
 	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="/scripts/jquery.bpopup.min.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
