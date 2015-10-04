@@ -1,0 +1,246 @@
+/* оформление проектов */
+.projects-wrap {
+	padding: 40px 24px 8px 24px;
+}
+
+.projects-list {
+	list-style: none;
+}
+
+.projects-item {
+	vertical-align: top;
+	display: inline-block;
+	width: 165px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: #fff;
+	border: 1px solid #c2c2c2;
+	margin: 0 15px 32px 15px;
+}
+
+.project-link {
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+
+.project-foto, .project-hover {
+	width: 165px;
+	height: 120px;
+}
+
+.project-title {
+	font-family: "OpenSansSemiBold";
+	font-size: 14px;
+	color: #727272;
+	padding: 7px 10px;
+	background: #f2f2f2;
+	text-align: center;
+	margin: 0;
+}
+
+.project-text {
+	font-family: "OpenSansRegular";
+	font-size: 14px;
+	color: #727272;
+	padding: 10px;
+	margin: 0;
+}
+
+.project-hover {
+	position: absolute;
+	top: 0;
+}
+
+.project-hover:hover {
+	background: rgba(0,0,0,0.3);
+	width: 165px;
+	height: 65px;
+	color: #fff;
+	text-align: center;
+	padding-top: 60px;
+}
+.project-hover:hover:before {
+	content: "Подробнее"
+}
+
+/* добавление проекта */
+.add-project-item {
+	display: inline-block;
+}
+
+.add-project {
+	position: relative;
+	width: 165px;
+	height: 132px;
+	background: #fdfdfd;
+	background: -moz-linear-gradient(top,  #fdfdfd 0%, #ebebeb 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#ebebeb));
+	background: -webkit-linear-gradient(top,  #fdfdfd 0%,#ebebeb 100%);
+	background: -o-linear-gradient(top,  #fdfdfd 0%,#ebebeb 100%);
+	background: -ms-linear-gradient(top,  #fdfdfd 0%,#ebebeb 100%);
+	background: linear-gradient(to bottom,  #fdfdfd 0%,#ebebeb 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#ebebeb',GradientType=0 );
+	margin: 0 20px 32px 20px;
+	border: 1px solid #c2c2c2;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.add-project-link {
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.add-project-icon {
+	height: 100%;
+	background: url(../img/pic.png) no-repeat;
+	background-position: 50% 30px;
+}
+
+.add-project-icon:after {
+	position: absolute;
+	bottom: 0;
+	content: "Добавить проект";
+	font-family: "OpenSansSemiBold";
+	font-size: 14px;
+	color: #727272;
+	padding: 20px ;
+}
+
+/* pop-up */
+
+.popup {
+	display: none;
+	top: 50%;
+	left: 50%;
+	
+}
+
+.popup-form-title {
+	font-family: "OpenSansLight";
+	font-size: 12px;
+	color: #fff;
+	margin: 0 0 4px 22px;
+}
+
+.popup-container {
+	position: relative;
+	padding: 20px;
+	width: 320px;
+	height: 420px;
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid #c2c2c2;
+	background: #fbfbfb;
+	background: -moz-linear-gradient(top,  #fbfbfb 0%, #f0f0f0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#f0f0f0));
+	background: -webkit-linear-gradient(top,  #fbfbfb 0%,#f0f0f0 100%);
+	background: -o-linear-gradient(top,  #fbfbfb 0%,#f0f0f0 100%);
+	background: -ms-linear-gradient(top,  #fbfbfb 0%,#f0f0f0 100%);
+	background: linear-gradient(to bottom,  #fbfbfb 0%,#f0f0f0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#f0f0f0',GradientType=0 );
+}
+
+.popup-label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.popup-title {
+	font-family: "OpenSansRegular";
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #727272;
+}
+
+.popup-input-text {
+	width: 300px;
+	padding: 10px;
+	background: #fcfcfc;
+	border: 1px solid #d6d6d6;
+	border-radius: 5px;
+	font-family: "OpenSansLight";
+	font-size: 13px;
+	color: #c7c7c7;
+	background: -moz-linear-gradient(top,  #fcfcfc 1%, #fafafa 50%, #f4f4f4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fcfcfc), color-stop(50%,#fafafa), color-stop(100%,#f4f4f4));
+	background: -webkit-linear-gradient(top,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	background: -o-linear-gradient(top,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	background: -ms-linear-gradient(top,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	background: linear-gradient(to bottom,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f4f4f4',GradientType=0 );
+}
+
+.popup-input-file {
+	position: relative;
+
+}
+
+.popup-input-file-upload {
+	position: absolute;
+	top: 0;
+	left: -9999px;
+}
+
+.popup-upload-fake {
+	width: 300px;
+	padding: 10px;
+	background: #fcfcfc;
+	border: 1px solid #d6d6d6;
+	border-radius: 5px;
+	font-family: "OpenSansLight";
+	font-size: 13px;
+	color: #c7c7c7;
+	background: -moz-linear-gradient(top,  #fcfcfc 1%, #fafafa 50%, #f4f4f4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fcfcfc), color-stop(50%,#fafafa), color-stop(100%,#f4f4f4));
+	background: -webkit-linear-gradient(top,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	background: -o-linear-gradient(top,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	background: -ms-linear-gradient(top,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	background: linear-gradient(to bottom,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f4f4f4',GradientType=0 );
+}
+	
+
+.popup-upload-icon {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	left: 270px;
+	background: url(../img/cloud.png) center center no-repeat;
+	border-left: 1px solid #d6d6d6;
+	z-index: 9;
+}
+
+.popup-textarea {
+	resize: none;
+	width: 300px;
+	height: 90px;
+	padding: 10px;
+	background: #fcfcfc;
+	border: 1px solid #d6d6d6;
+	border-radius: 5px;
+	font-family: "OpenSansLight";
+	font-size: 13px;
+	color: #c7c7c7;
+	background: -moz-linear-gradient(top,  #fcfcfc 1%, #fafafa 50%, #f4f4f4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fcfcfc), color-stop(50%,#fafafa), color-stop(100%,#f4f4f4));
+	background: -webkit-linear-gradient(top,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	background: -o-linear-gradient(top,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	background: -ms-linear-gradient(top,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	background: linear-gradient(to bottom,  #fcfcfc 1%,#fafafa 50%,#f4f4f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f4f4f4',GradientType=0 );
+}
+
+.popup-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	width: 13px;
+	height: 13px;
+	background: url(../img/popup-close.png);
+}

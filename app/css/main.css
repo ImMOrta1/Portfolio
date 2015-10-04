@@ -9,7 +9,8 @@ ul, p, h3 {
 }
 
 .wrapper {
-	background: linear-gradient(to bottom, #c0ecaf, #d8eaae, #628082);
+	background: url(../img/site-bg.jpg) top center no-repeat;
+	background-size: cover;
 	position: relative;
 	min-height: 100%;
 	min-width: 1200px;
@@ -395,7 +396,7 @@ span.skype {
 	clear: both;
 	margin-top: -60px;
 	position: relative;
-	z-index: 999;
+	z-index: 99;
 }
 
 .footer-content {
