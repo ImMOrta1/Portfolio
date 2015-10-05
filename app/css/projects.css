@@ -1,6 +1,6 @@
 /* оформление проектов */
 .projects-wrap {
-	padding: 40px 24px 8px 24px;
+	padding: 38px 24px 8px 24px;
 }
 
 .projects-list {
@@ -26,7 +26,7 @@
 
 .project-foto, .project-hover {
 	width: 165px;
-	height: 120px;
+	height: 118px;
 }
 
 .project-title {
@@ -55,7 +55,7 @@
 .project-hover:hover {
 	background: rgba(0,0,0,0.3);
 	width: 165px;
-	height: 65px;
+	height: 63px;
 	color: #fff;
 	text-align: center;
 	padding-top: 60px;
@@ -97,7 +97,7 @@
 .add-project-icon {
 	height: 100%;
 	background: url(../img/pic.png) no-repeat;
-	background-position: 50% 30px;
+	background-position: 50% 25px;
 }
 
 .add-project-icon:after {

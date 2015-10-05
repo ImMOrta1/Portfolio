@@ -77,15 +77,37 @@
 }
 
 .sing-in-checkbox {
-	display: block;
 	margin-bottom: 19px;
 	font-family: "OpenSansRegular";
 	font-size: 14px;
+	min-height: 16px;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    width: 15px;
+    height: 16px;
+    margin: 0;
+    top: 5px;
+    margin-left: -20px;
+}
+
+input[type="checkbox"] + label {
+    min-height: 16px;
+    background: url(../img/check.png) left center no-repeat;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+input[type="checkbox"]:checked + label {
+    background: url(../img/check-push.png) left center no-repeat;
 }
 
 .login-button {
 	display: block;
-	padding: 9px 53px;
+	padding: 9px 0;
+	width: 150px;
+	text-align: center;
 	margin: 0 auto;
 	border-radius: 5px;
 	border: 1px solid #71ae92;
@@ -115,32 +137,3 @@
 	background: linear-gradient(to bottom,  #b2e6d1 5%,#8fd9bb 7%,#669f87 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e6d1', endColorstr='#669f87',GradientType=0 );
 }
-
-
-
-
-
-/*input.checkbox[type="checkbox"] {
-   display:none;            
-}
-
-input.checkbox[type="checkbox"] + label.checkbox-text:before {
-   content: "";
-   display: inline-block;
-   height: 16px;
-   width: 16px;
-   border-radius: 5px;
-   border-top: 1px solid #c2c2c2;
-   margin: 0 10px 0 0;
-   background: #fff;
-}
-
-input.checkbox[type="checkbox"]:checked + label.checkbox-text:before {
-   background: url(../img/check.png) center no-repeat;
-}
-
-.checkbox-text {
-	font-family: "OpenSansRegular";
-	font-size: 14px;
-	color: #727272;
-}*/
