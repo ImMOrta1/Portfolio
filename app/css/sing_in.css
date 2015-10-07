@@ -40,6 +40,7 @@
 	font-size: 13px;
 	color: #727272;
 	padding-left: 70px;
+	outline: 0px;
 }
 
 .sing-in-username, .sing-in-password {
@@ -116,6 +117,7 @@ input[type="checkbox"]:checked + label {
 	font-family: "OpenSansSemiBold";
 	font-size: 14px;
 	text-shadow: 1px 1px 1px rgba(255,255,255,1);
+	outline: 0px;
 	background: #c0efdb;
 	background: -moz-linear-gradient(top,  #c0efdb 5%, #a3e5c9 7%, #76b899 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#c0efdb), color-stop(7%,#a3e5c9), color-stop(100%,#76b899));

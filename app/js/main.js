@@ -18,4 +18,5 @@ $(document).ready(function(){
 		$('.popup-upload-fake').text(pureVal);
 
 	});
+
 }); // - > ready_end;
