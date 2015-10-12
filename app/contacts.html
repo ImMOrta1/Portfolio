@@ -30,6 +30,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/projects.css">
 	<link rel="stylesheet" href="css/contacts.css">
@@ -77,22 +78,22 @@
 						<form action="" method="post" class="contacts-form">
 							<label class="contacts-form-label left">
 								<div class="contacts-form-title">Имя</div>
-								<input type="text" class="contacts-form-name" placeholder="Как к вам обращаться"></input>
+								<input type="text" qtip-position="left" qtip-content="введите имя" class="contacts-form-name" placeholder="Как к вам обращаться"></input>
 							</label>
 							<label class="contacts-form-label right">
 								<div class="contacts-form-title">Email</div>
-								<input type="text" class="contacts-form-email" placeholder="Куда мне писать"></input>
+								<input type="text" qtip-position="right" qtip-content="введите email" class="contacts-form-email" placeholder="Куда мне писать"></input>
 							</label>
 						</div>
 						<label class="contacts-form-label">
 							<div class="contacts-form-title">Сообщение</div>
-							<textarea class="contacts-form-textarea" placeholder="Кратко в чем суть"></textarea>
+							<textarea qtip-position="left" qtip-content="ваш вопрос" class="contacts-form-textarea" placeholder="Кратко в чем суть"></textarea>
 						</label>
 						<div class="contacts-form-title">Введите код указанный на картинке</div>
 						<div class="contacts-form-row clearfix">
 							<img src="img/capcha.png" height="79" width="191">
 							<label class="contacts-form-label right">
-								<input type="text" class="contacts-form-capcha" placeholder="Введите код"></input>
+								<input type="text" qtip-position="right" qtip-content="код капчи"  class="contacts-form-capcha" placeholder="Введите код"></input>
 							</label>
 						</div>
 						<div class="contacts-form-row clearfix">
@@ -117,6 +118,8 @@
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/validation.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

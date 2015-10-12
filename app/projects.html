@@ -30,6 +30,8 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/projects.css">
 	<link rel="stylesheet" href="css/contacts.css">
@@ -120,23 +122,23 @@
 								<form action="" method="post" class="popup-form">
 									<label class="popup-label">
 										<div class="popup-title">Название проекта</div>
-										<input type="text" class="popup-input-text" placeholder="Введите название"></input>
+										<input type="text" qtip-position="left" qtip-content="введите название" class="popup-input-text" placeholder="Введите название"></input>
 									</label>
 									<label class="popup-label">
 										<div class="popup-title">Картинка проекта</div>
 										<div class="popup-input-file">
 											<input type="file" name="" class="popup-input-file-upload">
-											<div class="popup-upload-fake">Загрузите изображение</div>
+											<div class="popup-upload-fake" qtip-position="left" qtip-content="изображение">Загрузите изображение</div>
 											<div class="popup-upload-icon"></div>
 										</div>
 									</label>
 									<label class="popup-label">
 										<div class="popup-title">URL проекта</div>
-										<input type="text" class="popup-input-text file" placeholder="Добавьте ссылку"></input>
+										<input type="text" qtip-position="left" qtip-content="ссылка на проект" class="popup-input-text file" placeholder="Добавьте ссылку"></input>
 									</label>
 									<label class="popup-label">
 										<div class="popup-title">Описание</div>
-										<textarea class="popup-textarea" placeholder="Пара слов о вашем проекте"></textarea>
+										<textarea class="popup-textarea" qtip-position="left" qtip-content="описание проекта" placeholder="Пара слов о вашем проекте"></textarea>
 									</label>
 									<button class="login-button" type="submit">Добавить</button>
 									<a href="#" class="popup-close"></a>
@@ -160,6 +162,9 @@
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/validation.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

@@ -30,6 +30,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/projects.css">
 	<link rel="stylesheet" href="css/contacts.css">
@@ -44,11 +45,11 @@
 			<p class="sing-in-title">Авторизируйтесь</p>
 			<form action="" method="post" class="sing-in-form">
 				<label class="sing-in-username">
-					<input class="username" type="text" placeholder="Введите Email">
+					<input class="username" type="text" qtip-position="right" qtip-content="введите email" placeholder="Введите Email">
 					<div class="mail-icon"></div>
 				</label>
 				<label class="sing-in-password">
-					<input class="password" type="password" placeholder="Введите пароль">
+					<input class="password" type="password" qtip-position="right" qtip-content="введите пароль" placeholder="Введите пароль">
 					<div class="pass-icon"></div>
 				</label>
 				<div class="sing-in-checkbox">
@@ -71,6 +72,8 @@
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/validation.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
