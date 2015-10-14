@@ -5,7 +5,7 @@ var validation = (function () {
 	};
 
 	var formValidation = function (form) {
-		var elements = form.find('input, textarea').not('input[type="file"], input[type="chechbox"]');
+		var elements = form.find('input, textarea, .popup-upload-fake').not('input[type="file"], input[type="chechbox"]');
 
 		$.each(elements, function (index, val){
 			var element = $(val),
@@ -24,13 +24,14 @@ var validation = (function () {
 
 	var _setUpListners = function () {
 		$('form').on('submit', _formSubmmit);
+		$('form').on('reset', _formReset);
 	};
 
 	var _formSubmmit = function(event){
 		event.preventDefault();
 
 		var form = $(this)
-			defence = _defenceForm(form);
+			 defence = _defenceForm(form);
 	};
 
 	var _defenceForm = function (form) {
