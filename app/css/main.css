@@ -469,6 +469,10 @@ span.skype {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7c0ad', endColorstr='#d67c5a',GradientType=0 );
 }
 
+.red-border {
+	box-shadow: 0 0 5px rgba(224,173,154,1);
+}
+
 /* footer -------------------------------------- */
 .footer-container {
 	min-width: 1200px;
