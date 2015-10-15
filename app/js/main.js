@@ -14,6 +14,7 @@ $(document).ready(function(){
 				form.find('.popup-input-text, .popup-textarea, .popup-upload-fake').trigger('qtipHidden');
 				form.find('.red-border').removeClass('red-border');
 				form.find('.popup-form').trigger('reset');
+				form.find('.popup-upload-fake').text('Загрузите изображение');
         	}
 		});
 	});
@@ -26,6 +27,9 @@ $(document).ready(function(){
 			pureVal = value.replace(/c:\\fakepath\\/gmi, "");
 
 		$('.popup-upload-fake').text(pureVal);
+
+		$('.popup-form').find('.popup-upload-fake').trigger('qtipHidden');
+		$('.popup-upload-fake').removeClass('red-border');
 	});
 
 	if(!Modernizr.input.placeholder){
@@ -43,22 +47,27 @@ var validation = (function () {
 	};
 
 	var formValidation = function (form) {
-		var elements = form.find('input, textarea, .popup-upload-fake').not('input[type="file"], input[type="chechbox"]');
+		var elements = form.find('input, textarea, .popup-upload-fake').not('input[type="chechbox"]');
 
 		$.each(elements, function (index, val){
 			var element = $(val),
 				 val = element.val(),
 				 pos = element.attr('qtip-position');
 
-			if(val.length ===0){
+			if(val.length === 0){
 				element.addClass('red-border');
+
+				if (element.hasClass('popup-input-file-upload')) {
+					element = $(this).closest('.popup-input-file').find('.popup-upload-fake');
+				}
+
 				_createQtip(element, pos);
 				valid = false;
 			}
 		});
+
 		return valid;
 	};
-
 
 
 	var _setUpListners = function () {
