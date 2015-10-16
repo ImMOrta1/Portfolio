@@ -47,7 +47,7 @@ var validation = (function () {
 	};
 
 	var formValidation = function (form) {
-		var elements = form.find('input, textarea, .popup-upload-fake').not('input[type="chechbox"]');
+		var elements = form.find('input, textarea, .popup-input-file-upload').not('input[type="chechbox"]');
 
 		$.each(elements, function (index, val){
 			var element = $(val),
@@ -59,6 +59,7 @@ var validation = (function () {
 
 				if (element.hasClass('popup-input-file-upload')) {
 					element = $(this).closest('.popup-input-file').find('.popup-upload-fake');
+					element.addClass('red-border');
 				}
 
 				_createQtip(element, pos);
@@ -68,6 +69,7 @@ var validation = (function () {
 
 		return valid;
 	};
+
 
 
 	var _setUpListners = function () {
