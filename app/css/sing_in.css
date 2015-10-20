@@ -86,7 +86,8 @@
 .checkbox-real {
 	position: absolute;
 	top: 0;
-	left: -9999px;
+	left: 0;
+	opacity: 0;
 }
 
 .checkbox-fake {
