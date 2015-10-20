@@ -79,30 +79,28 @@
 
 .sing-in-checkbox {
 	margin-bottom: 19px;
+	display: inline-block;
+	position: relative;
+}
+
+.checkbox-real {
+	position: absolute;
+	top: 0;
+	left: -9999px;
+}
+
+.checkbox-fake {
+	display: block;
+	height: 16px;
 	font-family: "OpenSansRegular";
 	font-size: 14px;
-	min-height: 16px;
+	line-height: 14px;
+	background: url(../img/check.png) center left no-repeat;
+	padding-left: 25px;
 }
 
-input[type="checkbox"] {
-    opacity: 0;
-    width: 15px;
-    height: 16px;
-    margin: 0;
-    top: 5px;
-    margin-left: -20px;
-    display: none;
-}
-
-input[type="checkbox"] + label {
-    min-height: 16px;
-    background: url(../img/check.png) left center no-repeat;
-    display: inline-block;
-    padding-left: 30px;
-}
-
-input[type="checkbox"]:checked + label {
-    background: url(../img/check-push.png) left center no-repeat;
+.checkbox-real:checked + .checkbox-fake {
+	background: url(../img/check-push.png) center left no-repeat;
 }
 
 .login-button {

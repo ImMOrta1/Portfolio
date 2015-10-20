@@ -7,6 +7,7 @@ $(document).ready(function(){
 		$('.form_input-fake').trigger('reset');
 
 		$('.popup').bPopup({
+			positionStyle: 'fixed',
 			closeClass : 'popup-close',
 
 			onClose: function(form) {
@@ -47,7 +48,7 @@ var validation = (function () {
 	};
 
 	var formValidation = function (form) {
-		var elements = form.find('input, textarea, .popup-input-file-upload').not('input[type="chechbox"]');
+		var elements = form.find('input, textarea, .popup-input-file-upload').not('.checkbox-real');
 
 		$.each(elements, function (index, val){
 			var element = $(val),
